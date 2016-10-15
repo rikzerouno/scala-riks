@@ -1,4 +1,4 @@
-package com.rik.programming.scala.chapterone
+package com.rik.programming.scala.chaptertwo
 
 import scala.annotation.tailrec
 import scala.io.{BufferedSource, Source}
