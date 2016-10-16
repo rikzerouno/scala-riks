@@ -6,6 +6,7 @@ package com.rik.programming.scala.chapterthree
 object ArraysSuite {
 
   def main(args: Array[String]) {
+    println("First array declaration")
     val firstArrayDec = new Array[String](3)
     firstArrayDec(0) = "Hello"
     firstArrayDec(1) = ","
