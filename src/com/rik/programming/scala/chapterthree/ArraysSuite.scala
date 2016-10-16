@@ -3,7 +3,7 @@ package com.rik.programming.scala.chapterthree
 /**
   * Created by riccardocinti on 10/16/16.
   */
-object ArraysTest {
+object ArraysSuite {
 
   def main(args: Array[String]) {
     val firstArrayDec = new Array[String](3)
