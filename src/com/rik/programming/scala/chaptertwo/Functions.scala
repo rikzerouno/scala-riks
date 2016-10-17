@@ -28,6 +28,10 @@ object Functions {
     println("Fibonacci: ")
     for (i <- 1 to 10)
       println(fibonacci(i))
+
+    println("Fibonacci tail: ")
+    for (i <- 1 to 10)
+      println(tailFibonacci(i))
   }
 
   def sum (x: Int, y: Int): Int = {
@@ -70,6 +74,14 @@ object Functions {
 
   def fibonacci(x: Int): Int = {
     if(x == 1 || x == 2) 1 else fibonacci(x - 1) + fibonacci(x - 2)
+  }
+
+  def tailFibonacci(x: Int) = {
+    @tailrec
+    def adder(p: Int, c: Int, counter: Int): Int = {
+      if(counter <= 2 ) c else adder(c, p + c, counter - 1)
+    }
+    adder(1, 1, x)
   }
 
   //side effects
