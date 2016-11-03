@@ -1,3 +1,4 @@
-out/*
-scala-riks.iml
+target/*
+scala-riks/target/*
 .idea/
+scala-riks/project/*
